@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = parseInt(prompt("Please enter your first parameter"));
+    var b = parseInt(prompt("Please enter your second parameter"));
+
+    if (testParameter(a,b)){
+        alert("a is greater than b")
+    }else{
+        var c = a + b;
+        alert(c)
+    }
+function testParameter(a,b) {
+
+    if (a > b){
+        return true
+    }else{
+        return false
+    }
+}
+
+</script>
+</body>
+</html>

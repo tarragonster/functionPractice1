@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var input = prompt("Enter the name of a star",'');
+
+    firstArray = ["Polaris","Aldebaran","Deneb,Vega","Altair","Dubhe","Regulus"];
+    secondArray =["Ursa Minor","Taurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+
+    alert(pickAStar(input));
+
+    function pickAStar(a) {
+        var b = "";
+
+        for (i = 0;i <firstArray.length;i++){
+            if (a === firstArray[i]){
+              b = secondArray[i];
+            }
+        }
+        return b;
+    }
+
+</script>
+
+</body>
+</html>
